@@ -1,0 +1,130 @@
+.topo {
+    background-color: rgb(0, 0, 94);
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Barcelona 19-20';
+}
+
+@font-face{
+    font-family: "Barcelona 19-20";
+    src: url('Barcelona 19-20.ttf');
+}
+
+.topo > .botão {
+    cursor: pointer;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    font-size: 6mm;
+    padding: 10px;
+    transition: transform 200ms;
+}
+
+.topo > .botão:hover {
+    background-color: rgb(180, 0, 0);
+    box-shadow: 0px 0px 28px 15px rgba(255, 0, 0, 0.5);
+    transform: translate(3px, 3px);
+}
+
+.topo > .dropdown {
+    display: block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    font-size: 6mm;
+    padding: 10px;
+    transition: transform 400ms, box-shadow 400ms;
+}
+
+.topo .dropdown:hover {
+    background-color: rgb(180, 0, 0);
+    box-shadow: 0px 0px 28px 15px rgba(255, 0, 0, 0.5);
+    transform: translate(3px, 3px);
+}
+
+.dropdown a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    font-size: 6mm;
+    padding: 10px;
+    transition: transform 200ms;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 110);
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+a:hover {
+    background-color: rgb(180, 0, 0);
+    box-shadow: 0px 0px 28px 15px rgba(255, 0, 0, 0.5);
+    transform: translate(3px, 3px);
+}
+
+.container {
+    display: flex;
+}
+
+.esquerdo {
+    background-color: rgb(0, 0, 110);
+    flex-direction: column;
+    width: 20vw;
+    height: 1200px;
+}
+
+.esquerdo > .botão {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: fcb-extra-bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    text-decoration: none;
+    padding: 28px;
+    height: 50px;
+    text-align: right;
+    font-size: 6mm;
+    transition: transform 200ms;
+    font-family: 'Barcelona 19-20';
+}
+
+.esquerdo > .botão:hover {
+    background-color: rgb(180, 0, 0);
+    box-shadow: 0px 0px 28px 15px rgba(255, 0, 0, 0.5);
+    transform: translate(3px, -3px);
+    
+}
+
+.corpo {
+    display: block;
+    height: 1200px;
+    width: 80vw;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.section-1 {
+    padding: 15px;
+    background-color: #181733;
+    color: #fff;
+}
